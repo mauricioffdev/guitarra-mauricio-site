@@ -789,6 +789,8 @@ body {
   text-align: center;
   margin-top: 30px;
   padding: 0 15px; /* garante respiro lateral no mobile */
+  position: relative; /* garante que z-index funcione se precisar */
+  z-index: 10;
 }
 
 .avaliacao-botao {
@@ -805,113 +807,32 @@ body {
   word-wrap: break-word;
   overflow-wrap: break-word; /* melhor suporte cross-browser */
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover efeito para desktop */
+.avaliacao-botao:hover {
+  background-color: #3367D6;
+  transform: translateY(-2px);
 }
 
 /* Ajustes Mobile */
 @media (max-width: 768px) {
-  .hamburger {
-    display: flex;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: 70px;
-    left: -100%;
-    width: 100%;
-    height: calc(100vh - 70px);
-    background: rgba(0,0,0,0.95);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: left 0.3s ease;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  .hero-content .container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 2rem;
-  }
-
-  .hero-title {
-    font-size: 2.5rem;
-  }
-
-  .about-content {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .method-features {
-    grid-template-columns: 1fr;
-  }
-
-  .areas-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-methods {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .youtube-card {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-buttons {
-    justify-content: center;
-  }
-
-  .btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 0.9rem;
-  }
-
   .avaliacao-botao {
     display: block;       /* ocupa largura inteira */
     width: 100%;
     max-width: 320px;     /* limite para não esticar demais */
-    margin: 0 auto;       /* centraliza */
+    margin: 20px auto;    /* centraliza com espaçamento */
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+
+  .avaliacao-container {
+    padding: 0 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .container {
-    padding: 0 15px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .nav {
-    padding: 1rem;
-  }
-
-  .hero-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 300px;
-    justify-content: center;
-  }
-
   .avaliacao-botao {
     font-size: 0.95rem;
     padding: 10px 16px;
