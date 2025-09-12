@@ -924,3 +924,18 @@ body {
     }
 }
 
+    @media (max-width: 768px) {
+  .hero-content .container {
+    flex-direction: column;
+  }
+
+  .hero-text {
+    order: 2;
+  }
+
+  .hero-image {
+    order: 1;
+  }
+}
+
+
