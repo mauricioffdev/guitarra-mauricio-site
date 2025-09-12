@@ -153,40 +153,85 @@ body {
     background: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.6) 100%);
 }
 
+/* HERO SECTION - Layout Responsivo */
 .hero-content .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 2rem 1rem;
+}
+
+/* Texto da seção hero */
+.hero-text {
+  flex: 1 1 50%;
+  min-width: 280px;
 }
 
 .hero-title {
-    font-size: 4rem;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
 }
 
 .title-main {
-    display: block;
-    color: #fff;
+  display: block;
+  color: #fff;
 }
 
 .title-sub {
-    display: block;
-    background: linear-gradient(135deg, #ffd700, #ffed4e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+  display: block;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .hero-description {
-    font-size: 1.2rem;
-    color: #ccc;
-    margin-bottom: 2rem;
-    line-height: 1.6;
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  padding-right: 1rem;
 }
+
+/* Imagem da seção hero */
+.hero-image {
+  flex: 1 1 40%;
+  min-width: 250px;
+  text-align: center;
+}
+
+.guitar-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* RESPONSIVO PARA TELAS MENORES */
+@media (max-width: 768px) {
+  .hero-content .container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .hero-text, .hero-image {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .hero-description {
+    padding: 0 15px;
+  }
+}
+
 
 .hero-buttons {
     display: flex;
