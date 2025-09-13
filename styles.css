@@ -934,8 +934,8 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: center 80%;
+  object-position: top center;
   border-radius: 8px;
- }
+}
 
 }
