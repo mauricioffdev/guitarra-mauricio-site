@@ -895,37 +895,32 @@ body {
 }
 
 
-@media (max-width: 480px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    .hero-title {
-        font-size: 2rem;
-    }
-    
-    .section-title {
-        font-size: 2rem;
-    }
-    
-    .nav {
-        padding: 1rem;
-    }
-    
-    .hero-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .btn {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
-}
-
-  @media (max-width: 768px) {
+@media (max-width: 768px) {
   .hero-image {
     display: none;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .hero-title,
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .nav {
+    padding: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
   }
 }
