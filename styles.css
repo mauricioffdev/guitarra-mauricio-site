@@ -930,7 +930,13 @@ body {
     overflow: visible;
   }
 
-  .guitar-image {
+  .hero-image {
+  position: relative;
+  top: 30px; /* empurra a imagem para baixo */
+  margin-bottom: -30px; /* compensa o espaço extra */
+}
+
+.guitar-image {
   width: 100%;
   height: auto;
   object-fit: cover;
