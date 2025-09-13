@@ -930,19 +930,14 @@ body {
     overflow: visible;
   }
 
- .hero-image {
-  position: relative;
-  height: 280px; /* altura fixa no mobile */
-  overflow: hidden;
-}
+  .guitar-image {
+    object-position: center;
+  }
 
-.guitar-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 30%;
-  border-radius: 8px;
+  .hero-text {
+    text-align: left;
+  }
 }
 
 
-}
+
