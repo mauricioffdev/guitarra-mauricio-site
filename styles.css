@@ -931,11 +931,9 @@ body {
   }
 
   .guitar-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: top center;
-  border-radius: 8px;
-}
-
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
 }
