@@ -900,6 +900,13 @@ body {
     display: none;
   }
 
+  .hero {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/mfplay.jpg'); /* Substitua pelo caminho da sua imagem */
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+  }
+
   .container {
     padding: 0 15px;
   }
